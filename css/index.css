@@ -255,7 +255,8 @@ header .social ul li:hover a svg {
 
 @media screen and (max-width: 350px) {
     header .social {
-        top: 35px;
+        top: -5px;
+        right: -25px;
     }
 }
 
@@ -321,10 +322,10 @@ header .social ul li:hover a svg {
 
 #app {
     margin-top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 630px) {
     #app {
         margin-top: 70px;
     }

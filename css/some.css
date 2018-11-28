@@ -1,33 +1,87 @@
 .some {
-    border: 1px solid red;
-    width: 100vw;
-    height: 100vh;
+    /* border: 1px solid red; */
 }
 
 .some h1 {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .some .cont-t {
     padding-left: 40px;
+    padding-right: 20px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, auto);
 }
 
+@media screen and (max-width: 630px) {
+    .some .cont-t {
+        grid-template-columns: repeat(2, auto);
+        padding: 2px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .some .cont-t {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
 .some .cont-t .tarM {
-    margin: 2%;
-    border: 1px solid red;
+    margin: 2px;
     position: relative;
+    /* background-color: gainsboro; */
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
 }
 
 .some .cont-t .tarM h3 {
     white-space: nowrap;
+    text-align: center;
+    background-color: white;
+    padding: 2px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 3px 3px 10px 10px;
+}
+
+.some .cont-t .tarM .desc {
+    padding-bottom: 10px;
+}
+
+.some .cont-t .tarM .desc img {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
 }
 
 .some .cont-t .tarM .desc p {
+    text-align: center;
+    margin: 0;
     padding: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
+}
+
+.some .cont-t .tarM .butons {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+
+.some .cont-t .tarM .butons .ico-img {
+    position: relative;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.some .cont-t .butons .ico-img svg {
+    fill: black;
+    width: 30px;
+    height: 30px;
 }
 
 .some .cont-t .tarM .butons .ico-img a {
@@ -60,16 +114,4 @@
     font-size: 80%;
     white-space: nowrap;
     transition: opacity 0.5s ease;
-}
-
-.some .cont-t .tarM .butons {
-    position: absolute;
-    bottom: 0px;
-    right: 5px;
-}
-
-.some .cont-t .butons svg {
-    fill: black;
-    width: 30px;
-    height: 30px;
 }
