@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo');
+body,
+html {
+    margin: 0px;
+}
+
+#cont {
+    display: grid;
+    grid: 100% / auto auto auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    justify-content: center;
+}
+
+#cont #brand {
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+#cont #brand #texto #txt {
+    color: black;
+    text-shadow: 1px 1px 2px rgb(175, 168, 168);
+}
+
+#cont #brand #texto a {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    position: relative;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(175, 168, 168);
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+#cont #brand #texto a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 40%;
+    bottom: 2px;
+    transition: all 0.5s;
+}
+
+#cont #brand #texto a:hover::before {
+    width: 80%;
+    left: 0;
+    background: white
+}
+
+@keyframes slidein {
+    0% {
+        color: rgb(251, 45, 45);
+    }
+    25% {
+        color: rgb(195, 18, 18);
+    }
+    50% {
+        color: rgb(134, 8, 8);
+    }
+    100% {
+        color: rgb(251, 45, 45);
+    }
+}
+
+#cont #brand span #number {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0.4em;
+    margin-top: 7px;
+    margin-left: -22px;
+    position: absolute;
+    letter-spacing: -1px;
+}
+
+#cont #redes {
+    display: block;
+    margin-top: 0px;
+}
+
+#cont #redes svg {
+    border-radius: 50%;
+    height: 32px;
+}

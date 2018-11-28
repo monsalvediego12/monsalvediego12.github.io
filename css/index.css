@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css?family=KoHo");
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    position: relative;
+    font-family: "KoHo", sans-serif;
+    background: #abbaab;
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to right, #ffffff, #abbaab);
+}
+
+
+/* MONSA BRAND STYLES */
+
+.estiloBrand {
+    position: relative;
+    z-index: 7;
+}
+
+.estiloBrand a {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.estiloBrand a .number {
+    padding: 10px;
+    font-size: 0.4em;
+    margin-top: 13px;
+    margin-left: -10px;
+    position: absolute;
+    letter-spacing: -1px;
+}
+
+
+/*FIN MONSA BRAND STYLES */
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    z-index: 9;
+}
+
+header .estiloBrand a {
+    left: 15px;
+    position: relative;
+}
+
+@media screen and (max-width: 630px) {
+    header {
+        position: fixed;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header .estiloBrand {
+        padding-left: 20px;
+        top: -5px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .estiloBrand {
+        padding-left: 20px;
+        top: -5px;
+    }
+}
+
+.lMonsa {
+    position: absolute;
+    top: 10px;
+    margin-left: 25px;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.trans :active {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.trans :focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.lMonsa :hover {
+    cursor: pointer;
+}
+
+.lMonsa svg {
+    width: 80px;
+}
+
+@media screen and (max-width: 630px) {
+    .lMonsa {
+        top: 5px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .lMonsa {
+        top: 10px;
+        margin-left: 15px;
+    }
+}
+
+
+/* BOTONES ABRIR CERRAR MENU */
+
+header .menuMob .open {
+    height: 50px;
+    width: 50px;
+}
+
+header .menuMob .open svg {
+    fill: black;
+}
+
+header .menuMob .close {
+    display: none;
+}
+
+header .menuMob .close svg {
+    fill: black;
+}
+
+header .menuMob a svg {
+    z-index: 8;
+    display: none;
+    position: absolute;
+    padding-left: 5px;
+    fill: white;
+}
+
+header .menuMob a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+    header .menuMob a svg {
+        display: inline-block;
+    }
+}
+
+
+/* FIN BOTONES ABRIR CERRAR MENU */
+
+header .menuDesk {
+    top: 0;
+    left: 80px;
+    position: absolute;
+}
+
+header .menuDesk ul {
+    left: 12%;
+    top: 0;
+    display: block;
+}
+
+@media screen and (max-width: 630px) {
+    header .menuDesk ul {
+        display: none;
+    }
+}
+
+header .menuDesk ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+header .menuDesk ul a {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .menuDesk ul a:hover {
+    color: gray;
+}
+
+header .social {
+    position: absolute;
+    top: 60px;
+}
+
+header .social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+header .social ul li {
+    margin: 5px;
+}
+
+header .social ul li a svg {
+    width: 24px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+header .social ul li:hover a svg {
+    opacity: 1;
+    /* transform: scale(1.5); */
+}
+
+.git:hover a svg {
+    fill: #181717;
+}
+
+.codePen:hover a svg {
+    fill: #000000;
+}
+
+.fb:hover a svg {
+    fill: #3B5998;
+}
+
+.tw:hover a svg {
+    fill: #1DA1F2;
+}
+
+.lin:hover a svg {
+    fill: #0077B5;
+}
+
+@media screen and (min-width: 630px) {
+    header .social {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header .social {
+        top: 5px;
+        right: 0;
+        z-index: 0;
+    }
+    header .social ul li {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header .social {
+        top: 35px;
+    }
+}
+
+
+/* RESPONSIVE HEADER LINKS MENUs*/
+
+@media screen and (min-width: 630px) {
+    .footer-menu-mobil {
+        display: none;
+    }
+    header .menuDesk {}
+}
+
+@media screen and (max-width: 630px) {
+    header .menuDesk {
+        z-index: 5;
+        width: 250px;
+        list-style: none;
+        display: block;
+        position: fixed;
+        height: 100%;
+        background: gray;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    header .menuDesk ul {
+        position: absolute;
+        margin: 0;
+        top: 45px;
+        left: 10px;
+        padding: 0;
+        display: block;
+    }
+    header .menuDesk ul li {
+        color: white;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+    header .menuDesk ul li a {
+        color: white;
+        transition: color 0.5s;
+    }
+    header .menuDesk ul li a:hover {
+        color: black;
+    }
+    header .menuDesk .footer-menu-mobil {
+        position: absolute;
+        text-decoration: none;
+        letter-spacing: 3px;
+        color: black;
+        font-size: 1em;
+        left: 10px;
+        bottom: 0;
+    }
+    header .menuDesk .footer-menu-mobil a {
+        color: white;
+        font-size: 1.2em;
+    }
+}
+
+#app {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 350px) {
+    #app {
+        margin-top: 70px;
+    }
+}
+
+
+/* LOADING */
+
+.loading {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    background-color: #000000;
+}
+
+.loader {
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 50%;
+    position: absolute;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+}
+
+.loading svg {
+    fill: white;
+    position: absolute;
+    width: 100%;
+}
+
+.closeLoading {
+    animation: too 1s both;
+}
+
+@-webkit-keyframes too {
+    to {
+        opacity: 0;
+        z-index: -1000;
+    }
+}
+
+.animviewso {
+    animation: animvo 1s ease;
+}
+
+@-webkit-keyframes animvo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

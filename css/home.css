@@ -1,0 +1,74 @@
+.home {
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+@media screen and (min-width: 630px) {
+    .home {
+        margin: auto;
+        margin-top: 0;
+        width: 50%;
+    }
+}
+
+
+/* propiedad aplicada hasta el max  */
+
+@media screen and (max-width: 630px) {
+    .home {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+}
+
+.home h2 {
+    color: black;
+}
+
+.home p {
+    color: gray;
+}
+
+.home .titulo {}
+
+.home .iconos {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+@media screen and (max-width: 630px) {
+    .home .iconos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.home .iconos .icoSVG {
+    text-align: center;
+}
+
+.home .iconos .icoSVG svg {
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+.home .iconos .icoSVG:hover svg {
+    transform: scale(1.5);
+    fill: #000;
+    color: black;
+    opacity: 1;
+}
+
+.home .iconos .icoSVG:hover b {
+    opacity: 0.6;
+    color: black;
+}
+
+.home .iconos .icoSVG b {
+    display: block;
+    font-size: 1em;
+    color: lightgray;
+    margin-top: 15px;
+    opacity: 0;
+    transition: all 1.5s;
+}

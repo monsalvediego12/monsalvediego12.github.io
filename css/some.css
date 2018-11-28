@@ -1,0 +1,75 @@
+.some {
+    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.some h1 {
+    text-align: center;
+}
+
+.some .cont-t {
+    padding-left: 40px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.some .cont-t .tarM {
+    margin: 2%;
+    border: 1px solid red;
+    position: relative;
+}
+
+.some .cont-t .tarM h3 {
+    white-space: nowrap;
+}
+
+.some .cont-t .tarM .desc p {
+    padding: 5px;
+    padding-bottom: 30px;
+}
+
+.some .cont-t .tarM .butons .ico-img a {
+    position: relative;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.some .cont-t .tarM .butons .ico-img a:visited {
+    text-decoration: none;
+    fill: white;
+    color: black;
+}
+
+.some .cont-t .tarM .butons .ico-img a:hover {
+    opacity: 1;
+}
+
+.some .cont-t .tarM .butons .ico-img a:hover p {
+    opacity: 1;
+}
+
+.some .cont-t .tarM .butons .ico-img a p {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    margin: auto;
+    margin-top: -30px;
+    font-size: 80%;
+    white-space: nowrap;
+    transition: opacity 0.5s ease;
+}
+
+.some .cont-t .tarM .butons {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+
+.some .cont-t .butons svg {
+    fill: black;
+    width: 30px;
+    height: 30px;
+}
