@@ -11,6 +11,35 @@ body {
     background: linear-gradient(to right, #ffffff, #abbaab);
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+
+/* the new scrollbar will have a flat appearance with the set background color */
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* this will style the thumb, ignoring the track */
+
+body::-webkit-scrollbar-button {
+    background-color: lightgray;
+}
+
+
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+body::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
 
 /* MONSA BRAND STYLES */
 
@@ -226,12 +255,20 @@ header .social ul li:hover a svg {
     fill: #3B5998;
 }
 
+.ms:hover a svg {
+    fill: #0084FF;
+}
+
 .tw:hover a svg {
     fill: #1DA1F2;
 }
 
 .lin:hover a svg {
     fill: #0077B5;
+}
+
+.medium:hover a svg {
+    fill: #12100E;
 }
 
 @media screen and (min-width: 630px) {

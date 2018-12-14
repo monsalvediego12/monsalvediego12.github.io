@@ -1,0 +1,14 @@
+ .contact {
+     margin-left: 50px;
+     text-align: center;
+ }
+ 
+ .contact-container li {
+     list-style: none;
+ }
+ 
+ .contact-container li a svg {
+     width: 50px;
+     opacity: 0.5;
+     transition: all 0.3s;
+ }

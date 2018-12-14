@@ -1,3 +1,4 @@
+console.log('main.js');
 let bOpen = document.querySelector('#open-close-mobil');
 let bClose = document.querySelector('#close-menu-mobil');
 let mC = document.querySelector('#monsaC');
@@ -93,4 +94,11 @@ function carga() {
             load.classList.add('closeLoading')
         }, 1500);
     }
+}
+
+
+//some
+
+function clickM() {
+    console.log('vlick')
 }

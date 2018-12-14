@@ -46,11 +46,11 @@ router
         loadHTML('/algunos.html', 'app');
     })
     .add('about', function() {
-        loadHTML('/home.html', 'app');
+        loadHTML('/about.html', 'app');
     })
 
 .add('contact', function() {
-    loadHTML('/algunos.html', 'app');
+    loadHTML('/contact.html', 'app');
 })
 
 .check()

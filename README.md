@@ -1,4 +1,4 @@
-# Landing page por Diego Monsalve
+# Landing page and SPA por Diego Monsalve
 ## En DESARROLLO
 
 ### Make whit:
